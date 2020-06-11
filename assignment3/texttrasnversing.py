@@ -9,15 +9,13 @@ url= str(sys.argv[1])
 urlrequest=urllib.request.urlopen(url)
 urlread = urlrequest.read()
 f= open("Linux1.txt","w+")
-para=re.findall(r'<p>(.*?)</p>',str(urlread))
+para=re.findall(r'<body (.*?)</body>',str(urlread))
 
-for eachPara in para:
+clean = re.compile(r'(<.*?>)|({.*?})|([\n\r\t\\])')
 
-    clean = re.compile(r'(<.*?>)|({.*?})|([\n\r\t\\])')
-
-    paragraph= re.sub(clean, '', str(eachPara))
+data= re.sub(clean, '', str(para))
         
-    f.write(paragraph)
-    f.write("\t\n\n")
-    print(paragraph)
+f.write(data)
+f.write("\t\n\n")
+print(data)
 f.close() 
