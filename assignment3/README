@@ -40,5 +40,6 @@ Return the string obtained by replacing non-overlapping occurrences of pattern i
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Working
-Please copy and paste the code in a .py file and the execute it by typing python3 (filename)
+Please execute the file named texttrasnversing.py execute it by typing 
+python3 (filename) in the terminal
 A new file will be created with the name of Linux.txt
