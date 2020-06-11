@@ -1,0 +1,44 @@
+# Pakages
+
+- URLLIB
+urllib is a Python module that can be used for opening URLs. It defines functions and classes to help in URL actions.
+
+- re
+A regular expression is a special sequence of characters that helps you match or find other strings or sets of strings,
+
+
+## Installation
+
+Use the following commands to install the pakages. Note they are written in the code aswell.
+```python
+import requests
+import urllib.request
+import re
+import string
+```
+
+## Usage
+
+```python
+re.findall(pattern, string, flags=0)
+re.compile(pattern, flags=0)
+re.sub(pattern, repl, string, count=0, flags=0)
+```
+
+
+-- re.findall
+Return all non-overlapping matches of pattern in string, as a list of strings
+
+-- re.compile
+Compile a regular expression pattern into a regular expression object
+
+-- re.sub
+Return the string obtained by replacing non-overlapping occurrences of pattern in string by the replacement repl
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Working
+Please copy and paste the code in a .py file and the execute it by typing python3 (filename)
+A new file will be created with the name of Linux.txt
